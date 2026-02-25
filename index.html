@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Love Story</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating Hearts/Particles Container -->
+    <div id="particles-container" aria-hidden="true"></div>
+
+    <!-- Music Modal -->
+    <div id="music-modal" class="modal-overlay">
+        <div class="modal-content glass-card">
+            <div class="modal-icon">🎵</div>
+            <h2 class="modal-title">Do you want to play our song?</h2>
+            <p class="modal-subtitle">Let the music set the mood for our memories</p>
+            <div class="modal-buttons">
+                <button id="btn-play-music" class="btn btn-primary">
+                    <span class="btn-icon">❤️</span> Yes, play music
+                </button>
+                <button id="btn-no-music" class="btn btn-secondary">
+                    Maybe later
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Music Player Button -->
+    <button id="floating-music-btn" class="floating-music-btn" aria-label="Play or pause music">
+        <span class="music-icon">🎶</span>
+        <span class="music-wave"></span>
+    </button>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 19V5M5 12l7-7 7 7"/>
+        </svg>
+    </button>
+
+    <!-- Navigation Dots (Right Side) -->
+    <nav class="nav-dots">
+        <a href="#hero" class="nav-dot active" data-section="hero"></a>
+        <a href="#love-letter" class="nav-dot" data-section="love-letter"></a>
+        <a href="#timeline" class="nav-dot" data-section="timeline"></a>
+        <a href="#gallery" class="nav-dot" data-section="gallery"></a>
+        <a href="#future" class="nav-dot" data-section="future"></a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-background">
+                <div class="hero-gradient"></div>
+                <div class="hero-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                </div>
+            </div>
+            <div class="hero-content">
+                <p class="hero-overline">Welcome to</p>
+                <h1 class="hero-title">
+                    <span class="title-line">Our Love</span>
+                    <span class="title-line title-accent">Story</span>
+                </h1>
+                <p class="hero-subtitle">Every moment with you is my favorite memory</p>
+                <div class="hero-date">Since February 26, 2023</div>
+                
+                <div class="hero-couple">
+                    <span class="heart-divider">❤️</span>
+                    <span class="couple-names">Febba & Viona</span>
+                    <span class="heart-divider">❤️</span>
+                </div>
+
+                <div class="hero-scroll-indicator">
+                    <span class="scroll-text">Begin our journey</span>
+                    <div class="scroll-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 5v14M19 12l-7 7-7-7"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Love Letter Section -->
+        <section id="love-letter" class="love-letter-section">
+            <div class="section-container">
+                <div class="section-header reveal">
+                    <span class="section-icon">💕</span>
+                    <h2 class="section-title">A Love Letter</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="letter-container glass-card reveal">
+                    <div class="letter-paper">
+                        <p class="letter-date">My dearest love,</p>
+                        <p class="letter-text">
+                            Kadang aku masih heran bisa sejauh ini sama kamu. Dari awal kenal sampai sekarang, rasanya cepat tapi juga penuh cerita.
+                        </p>
+                        <p class="letter-text">
+                            Aku masih ingat obrolan panjang kita yang nggak kerasa waktu. Hal-hal kecil yang mungkin buat orang lain biasa saja, tapi buat aku itu berharga banget. Termasuk momen kita nyasar, salah jalan, atau cuma duduk diam tapi tetap nyaman.
+                        </p>
+                        <p class="letter-text">
+                            Terima kasih sudah selalu ada. Terima kasih sudah sabar sama aku, bahkan di saat aku lagi nggak gampang dimengerti. Terima kasih sudah jadi orang yang bisa aku ceritain apa pun tanpa takut dihakimi.
+                        </p>
+                        <p class="letter-text">
+                            Aku nggak janji semuanya akan selalu mudah. Tapi aku janji akan terus belajar jadi pasangan yang lebih baik buat kamu. Kita mungkin nggak sempurna, tapi kita selalu berusaha. Dan itu yang paling penting.
+                        </p>
+                        <p class="letter-text">
+                            Masih banyak hal yang pengen aku jalanin bareng kamu. Masih banyak cerita yang belum kita buat. Dan aku senang itu semua bisa aku lalui sama kamu.
+                            Aku sayang kamu. Bukan karena semuanya selalu indah, tapi karena sama kamu, semuanya terasa berarti.
+                        </p>
+                        <p class="letter-text">
+                            Happy anniversary. Selalu kamu. Selalu aku. Selalu bareng. Mantap.
+                        </p>
+                        <p class="letter-signature">
+                            Forever yours,<br>
+                            <span class="signature-name">Febba</span>
+                        </p>
+                    </div>
+                    <div class="letter-seal">❤️</div>
+                </div>
+
+                <!-- Navigation Buttons -->
+                <div class="section-nav reveal">
+                    <button class="nav-scroll-btn" data-target="timeline">
+                        <span>Our Journey</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 5v14M19 12l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section id="timeline" class="timeline-section">
+            <div class="section-container">
+                <div class="section-header reveal">
+                    <span class="section-icon">🗓</span>
+                    <h2 class="section-title">Our Journey Together</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="timeline">
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item reveal" data-delay="1">
+                        <div class="timeline-marker">
+                            <span class="marker-dot"></span>
+                            <span class="marker-line"></span>
+                        </div>
+                        <div class="timeline-content glass-card">
+                            <div class="timeline-date">September, 2022</div>
+                            <h3 class="timeline-title">First Date</h3>
+                            <p class="timeline-description">
+                                Our first official date. Nervous butterflies, stolen glances, and the beginning 
+                                of countless more magical moments to come.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item reveal" data-delay="2">
+                        <div class="timeline-marker">
+                            <span class="marker-dot"></span>
+                            <span class="marker-line"></span>
+                        </div>
+                        <div class="timeline-content glass-card">
+                            <div class="timeline-date">October 2025</div>
+                            <h3 class="timeline-title">First Trip</h3>
+                            <p class="timeline-description">
+                                Our first adventure together. Getting lost in new places, creating memories, 
+                                and discovering how perfectly we complement each other.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <!-- Timeline Item 5 -->
+                    <div class="timeline-item reveal" data-delay="4">
+                        <div class="timeline-marker">
+                            <span class="marker-dot"></span>
+                        </div>
+                        <div class="timeline-content glass-card">
+                            <div class="timeline-date">February 26, 2026</div>
+                            <h3 class="timeline-title">3rd Anniversary</h3>
+                            <p class="timeline-description">
+                                Celebrating another year of love, growth, and beautiful memories. 
+                                Here's to many more chapters of our love story.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Buttons -->
+                <div class="section-nav reveal">
+                    <button class="nav-scroll-btn" data-target="gallery">
+                        <span>View Gallery</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 5v14M19 12l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery-section">
+            <div class="section-container">
+                <div class="section-header reveal">
+                    <span class="section-icon">📸</span>
+                    <h2 class="section-title">Our Memories</h2>
+                    <div class="section-line"></div>
+                    <p class="section-subtitle">Click any memory to view in fullscreen</p>
+                </div>
+
+               
+                <div class="gallery-container" id="gallery-container">
+                    
+                  
+                </div>
+
+                <!-- Navigation Buttons -->
+                <div class="section-nav reveal">
+                    <button class="nav-scroll-btn" data-target="future">
+                        <span>Our Future</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 5v14M19 12l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Future Dreams Section -->
+        <section id="future" class="future-section">
+            <div class="section-container">
+                <div class="section-header reveal">
+                    <span class="section-icon">💫</span>
+                    <h2 class="section-title">Our Dreams</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="future-content">
+                    <div class="future-text-container glass-card reveal">
+                        <h3 class="future-heading">What the Future Holds</h3>
+                        <p class="future-text">
+                            As I look ahead, I see a lifetime of adventures waiting for us. 
+                            I dream of lazy Sunday mornings wrapped in each other's arms, 
+                            of building a home filled with laughter and love, of growing old together 
+                            still holding hands like we did on our first date.
+                        </p>
+                        <p class="future-text">
+                            I dream of travels to faraway lands, of quiet evenings watching the sunset, 
+                            of celebrating countless more anniversaries and creating memories that will 
+                            fill our scrapbook of life.
+                        </p>
+                        <p class="future-text">
+                            Whatever the future brings, I know it'll be beautiful because I'll have you by my side. 
+                            You're not just my past and present - you're my future.
+                        </p>
+                        <p class="future-text signature">
+                            I love you to the moon and back, today and always.
+                        </p>
+                    </div>
+
+                    <div class="future-counter glass-card reveal">
+                        <h3 class="counter-label">Time We've Been Together</h3>
+                        <div class="counter-display" id="relationship-counter">
+                            <div class="counter-unit">
+                                <span class="counter-value" id="years">0</span>
+                                <span class="counter-name">Years</span>
+                            </div>
+                            <div class="counter-separator">:</div>
+                            <div class="counter-unit">
+                                <span class="counter-value" id="months">0</span>
+                                <span class="counter-name">Months</span>
+                            </div>
+                            <div class="counter-separator">:</div>
+                            <div class="counter-unit">
+                                <span class="counter-value" id="days">0</span>
+                                <span class="counter-name">Days</span>
+                            </div>
+                        </div>
+                        <p class="counter-note">And counting every moment... 💕</p>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <footer class="site-footer reveal">
+                    <div class="footer-heart">❤️</div>
+                    <p class="footer-text">Made with love for the most special person</p>
+                    <p class="footer-year">© <span id="year"></span> Our Love Story</p>
+                </footer>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox Viewer -->
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close" aria-label="Close lightbox">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 6L6 18M6 6l12 12"/>
+            </svg>
+        </button>
+        <button class="lightbox-nav lightbox-prev" aria-label="Previous">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M15 18l-6-6 6-6"/>
+            </svg>
+        </button>
+        <button class="lightbox-nav lightbox-next" aria-label="Next">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 18l6-6-6-6"/>
+            </svg>
+        </button>
+        <div class="lightbox-content">
+            <div class="lightbox-media-container" id="lightbox-media-container">
+                <!-- Media will be inserted here dynamically -->
+            </div>
+            <div class="lightbox-caption" id="lightbox-caption"></div>
+        </div>
+        <div class="lightbox-counter" id="lightbox-counter"></div>
+    </div>
+
+    <!-- Audio Element -->
+ 
+    <audio id="background-music" loop preload="auto">
+        <source src="assets/music/song.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+      </script>
+</body>
+</html>
